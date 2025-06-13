@@ -3,10 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbopack",
-    "build": "next build && open-next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "NEXT_PRIVATE_STANDALONE=true next build",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv env.d.ts",
+    "check": "npm run build && tsc && wrangler deploy --dry-run",
+    "deploy": "wrangler deploy",
+    "dev": "next dev",
+    "lint": "next lint",
+    "postbuild": "opennextjs-cloudflare build -s",
+    "preview": "npm run build && wrangler dev",
+    "start": "next start"
   },
   "dependencies": {
     "next": "15.3.3",
