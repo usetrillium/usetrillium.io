@@ -11,8 +11,8 @@ export default function Home() {
           </div>
           <nav className="flex items-center space-x-6">
             <a href="#features" className="text-sm font-medium hover:text-green-600 dark:hover:text-green-400 transition-colors">Features</a>
-            <a href="#" className="text-sm font-medium hover:text-green-600 dark:hover:text-green-400 transition-colors">Documentation</a>
-            <a href="#" className="text-sm font-medium hover:text-green-600 dark:hover:text-green-400 transition-colors">GitHub</a>
+            <a href="https://docs.usetrillium.io" target="_blank" rel="noopener noreferrer" className="text-sm font-medium hover:text-green-600 dark:hover:text-green-400 transition-colors">Documentation</a>
+            <a href="https://github.com/usetrillium/trillium" target="_blank" rel="noopener noreferrer" className="text-sm font-medium hover:text-green-600 dark:hover:text-green-400 transition-colors">GitHub</a>
             <ThemeToggle />
             <a href="#" className="text-sm px-4 py-2 bg-green-600 dark:bg-green-500 hover:bg-green-700 dark:hover:bg-green-600 text-white rounded-md transition-all duration-200 ease-in-out transform hover:scale-105">Login</a>
           </nav>
@@ -42,7 +42,8 @@ export default function Home() {
                 Try Demo
               </a>
               <a
-                href="#"
+                href="https://docs.usetrillium.io"
+                target="_blank" rel="noopener noreferrer"
                 className="inline-flex items-center justify-center px-8 py-3 border border-green-600 dark:border-green-400 text-base font-medium rounded-md text-green-600 dark:text-green-400 hover:bg-green-50 dark:hover:bg-gray-800 transition-all duration-200 shadow-sm"
               >
                 View Documentation
@@ -124,8 +125,8 @@ export default function Home() {
               <p className="mt-1 text-sm text-[rgb(var(--color-muted))]">Open Source Hyperconverged Infrastructure</p>
             </div>
             <div className="flex space-x-6">
-              <a href="#" className="text-sm hover:text-[rgb(var(--color-primary))] transition-colors">GitHub</a>
-              <a href="#" className="text-sm hover:text-[rgb(var(--color-primary))] transition-colors">Documentation</a>
+              <a href="https://github.com/usetrillium/trillium" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-[rgb(var(--color-primary))] transition-colors">GitHub</a>
+              <a href="https://docs.usetrillium.io" target="_blank" rel="noopener noreferrer" className="text-sm hover:text-[rgb(var(--color-primary))] transition-colors">Documentation</a>
               <a href="#" className="text-sm hover:text-[rgb(var(--color-primary))] transition-colors">Community</a>
             </div>
           </div>
